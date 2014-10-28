@@ -30,8 +30,8 @@
 		3BBEA9DE19FFD1B400282ACD /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBEA9DC19FFD1B400282ACD /* TesseractOCR.framework */; };
 		3BBEA9F319FFD3A800282ACD /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEA9F219FFD3A800282ACD /* ArrayExtension.swift */; };
 		3BBEA9FF19FFDDC100282ACD /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3BBEA9FE19FFDDC100282ACD /* tessdata */; };
-		3BBEAA0319FFE59500282ACD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEAA0219FFE59500282ACD /* README.md */; };
-		3BBEAA0519FFE62700282ACD /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3BBEAA0419FFE62700282ACD /* LICENSE.txt */; };
+		3BBEAA0819FFE81300282ACD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEAA0619FFE81300282ACD /* README.md */; };
+		3BBEAA0919FFE81300282ACD /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3BBEAA0719FFE81300282ACD /* LICENSE.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,8 +77,8 @@
 		3BBEA9DC19FFD1B400282ACD /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 		3BBEA9F219FFD3A800282ACD /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		3BBEA9FE19FFDDC100282ACD /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
-		3BBEAA0219FFE59500282ACD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = SwiftOpenCV/README.md; sourceTree = "<group>"; };
-		3BBEAA0419FFE62700282ACD /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = SwiftOpenCV/LICENSE.txt; sourceTree = "<group>"; };
+		3BBEAA0619FFE81300282ACD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3BBEAA0719FFE81300282ACD /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +106,8 @@
 		3BBEA97919FFCBCD00282ACD = {
 			isa = PBXGroup;
 			children = (
-				3BBEAA0219FFE59500282ACD /* README.md */,
-				3BBEAA0419FFE62700282ACD /* LICENSE.txt */,
+				3BBEAA0619FFE81300282ACD /* README.md */,
+				3BBEAA0719FFE81300282ACD /* LICENSE.txt */,
 				3BBEA9DB19FFD1B400282ACD /* opencv2.framework */,
 				3BBEA9DC19FFD1B400282ACD /* TesseractOCR.framework */,
 				3BBEA9D919FFD19500282ACD /* libstdc++.6.0.9.dylib */,
@@ -266,7 +266,7 @@
 				3BBEA9C219FFCD6400282ACD /* trained_classifierNM2.xml in Resources */,
 				3BBEA9FF19FFDDC100282ACD /* tessdata in Resources */,
 				3BBEA99219FFCBCE00282ACD /* LaunchScreen.xib in Resources */,
-				3BBEAA0519FFE62700282ACD /* LICENSE.txt in Resources */,
+				3BBEAA0919FFE81300282ACD /* LICENSE.txt in Resources */,
 				3BBEA9C119FFCD6400282ACD /* trained_classifierNM1.xml in Resources */,
 				3BBEA9C419FFCE0D00282ACD /* Main.storyboard in Resources */,
 				3BBEA9C019FFCD6400282ACD /* scenetext02.jpg in Resources */,
@@ -298,7 +298,7 @@
 				3BBEA9CC19FFCE4800282ACD /* UIImage+FixOrientation.m in Sources */,
 				3BBEA9D619FFCE8E00282ACD /* MBProgressHUD.m in Sources */,
 				3BBEA9CE19FFCE6000282ACD /* CharBox.swift in Sources */,
-				3BBEAA0319FFE59500282ACD /* README.md in Sources */,
+				3BBEAA0819FFE81300282ACD /* README.md in Sources */,
 				3BBEA9C919FFCE3B00282ACD /* TextDetect.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
