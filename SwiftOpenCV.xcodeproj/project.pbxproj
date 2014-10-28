@@ -77,8 +77,8 @@
 		3BBEA9DC19FFD1B400282ACD /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 		3BBEA9F219FFD3A800282ACD /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		3BBEA9FE19FFDDC100282ACD /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
-		3BBEAA0219FFE59500282ACD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3BBEAA0419FFE62700282ACD /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		3BBEAA0219FFE59500282ACD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = SwiftOpenCV/README.md; sourceTree = "<group>"; };
+		3BBEAA0419FFE62700282ACD /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = SwiftOpenCV/LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +106,8 @@
 		3BBEA97919FFCBCD00282ACD = {
 			isa = PBXGroup;
 			children = (
+				3BBEAA0219FFE59500282ACD /* README.md */,
+				3BBEAA0419FFE62700282ACD /* LICENSE.txt */,
 				3BBEA9DB19FFD1B400282ACD /* opencv2.framework */,
 				3BBEA9DC19FFD1B400282ACD /* TesseractOCR.framework */,
 				3BBEA9D919FFD19500282ACD /* libstdc++.6.0.9.dylib */,
@@ -152,8 +154,6 @@
 				3BBEA99019FFCBCE00282ACD /* LaunchScreen.xib */,
 				3BBEA98519FFCBCE00282ACD /* Supporting Files */,
 				3BBEA9A719FFCCE000282ACD /* SwiftOpenCV-Bridging-Header.h */,
-				3BBEAA0219FFE59500282ACD /* README.md */,
-				3BBEAA0419FFE62700282ACD /* LICENSE.txt */,
 			);
 			path = SwiftOpenCV;
 			sourceTree = "<group>";
