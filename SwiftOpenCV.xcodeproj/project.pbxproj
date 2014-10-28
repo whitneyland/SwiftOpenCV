@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BBEA98819FFCBCE00282ACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEA98719FFCBCE00282ACD /* AppDelegate.swift */; };
+		3BBEA98A19FFCBCE00282ACD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEA98919FFCBCE00282ACD /* ViewController.swift */; };
+		3BBEA98F19FFCBCE00282ACD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBEA98E19FFCBCE00282ACD /* Images.xcassets */; };
+		3BBEA99219FFCBCE00282ACD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BBEA99019FFCBCE00282ACD /* LaunchScreen.xib */; };
+		3BBEA99E19FFCBCE00282ACD /* SwiftOpenCVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEA99D19FFCBCE00282ACD /* SwiftOpenCVTests.swift */; };
+		3BBEA9BF19FFCD6400282ACD /* scenetext01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3BBEA9BB19FFCD6400282ACD /* scenetext01.jpg */; };
+		3BBEA9C019FFCD6400282ACD /* scenetext02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3BBEA9BC19FFCD6400282ACD /* scenetext02.jpg */; };
+		3BBEA9C119FFCD6400282ACD /* trained_classifierNM1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3BBEA9BD19FFCD6400282ACD /* trained_classifierNM1.xml */; };
+		3BBEA9C219FFCD6400282ACD /* trained_classifierNM2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3BBEA9BE19FFCD6400282ACD /* trained_classifierNM2.xml */; };
+		3BBEA9C419FFCE0D00282ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBEA9C319FFCE0D00282ACD /* Main.storyboard */; };
+		3BBEA9C619FFCE3000282ACD /* SwiftOCR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEA9C519FFCE3000282ACD /* SwiftOCR.swift */; };
+		3BBEA9C919FFCE3B00282ACD /* TextDetect.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEA9C819FFCE3B00282ACD /* TextDetect.mm */; };
+		3BBEA9CC19FFCE4800282ACD /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEA9CB19FFCE4800282ACD /* UIImage+FixOrientation.m */; };
+		3BBEA9CE19FFCE6000282ACD /* CharBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEA9CD19FFCE6000282ACD /* CharBox.swift */; };
+		3BBEA9D119FFCE6F00282ACD /* ImageWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEA9D019FFCE6F00282ACD /* ImageWrapper.mm */; };
+		3BBEA9D319FFCE7F00282ACD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEA9D219FFCE7F00282ACD /* DetailViewController.swift */; };
+		3BBEA9D619FFCE8E00282ACD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEA9D519FFCE8E00282ACD /* MBProgressHUD.m */; };
+		3BBEA9D819FFD18500282ACD /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBEA9D719FFD18500282ACD /* CoreImage.framework */; };
+		3BBEA9DA19FFD19500282ACD /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBEA9D919FFD19500282ACD /* libstdc++.6.0.9.dylib */; };
+		3BBEA9DD19FFD1B400282ACD /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBEA9DB19FFD1B400282ACD /* opencv2.framework */; };
+		3BBEA9DE19FFD1B400282ACD /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBEA9DC19FFD1B400282ACD /* TesseractOCR.framework */; };
+		3BBEA9F319FFD3A800282ACD /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBEA9F219FFD3A800282ACD /* ArrayExtension.swift */; };
+		3BBEA9FF19FFDDC100282ACD /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3BBEA9FE19FFDDC100282ACD /* tessdata */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BBEA99819FFCBCE00282ACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BBEA97A19FFCBCD00282ACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BBEA98119FFCBCE00282ACD;
+			remoteInfo = SwiftOpenCV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BBEA98219FFCBCE00282ACD /* SwiftOpenCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftOpenCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BBEA98619FFCBCE00282ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BBEA98719FFCBCE00282ACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BBEA98919FFCBCE00282ACD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BBEA98E19FFCBCE00282ACD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3BBEA99119FFCBCE00282ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3BBEA99719FFCBCE00282ACD /* SwiftOpenCVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftOpenCVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BBEA99C19FFCBCE00282ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BBEA99D19FFCBCE00282ACD /* SwiftOpenCVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOpenCVTests.swift; sourceTree = "<group>"; };
+		3BBEA9A719FFCCE000282ACD /* SwiftOpenCV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftOpenCV-Bridging-Header.h"; sourceTree = "<group>"; };
+		3BBEA9BB19FFCD6400282ACD /* scenetext01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scenetext01.jpg; sourceTree = "<group>"; };
+		3BBEA9BC19FFCD6400282ACD /* scenetext02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scenetext02.jpg; sourceTree = "<group>"; };
+		3BBEA9BD19FFCD6400282ACD /* trained_classifierNM1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = trained_classifierNM1.xml; sourceTree = "<group>"; };
+		3BBEA9BE19FFCD6400282ACD /* trained_classifierNM2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = trained_classifierNM2.xml; sourceTree = "<group>"; };
+		3BBEA9C319FFCE0D00282ACD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3BBEA9C519FFCE3000282ACD /* SwiftOCR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftOCR.swift; sourceTree = "<group>"; };
+		3BBEA9C719FFCE3B00282ACD /* TextDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextDetect.h; sourceTree = "<group>"; };
+		3BBEA9C819FFCE3B00282ACD /* TextDetect.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TextDetect.mm; sourceTree = "<group>"; };
+		3BBEA9CA19FFCE4800282ACD /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
+		3BBEA9CB19FFCE4800282ACD /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
+		3BBEA9CD19FFCE6000282ACD /* CharBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharBox.swift; sourceTree = "<group>"; };
+		3BBEA9CF19FFCE6F00282ACD /* ImageWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageWrapper.h; sourceTree = "<group>"; };
+		3BBEA9D019FFCE6F00282ACD /* ImageWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageWrapper.mm; sourceTree = "<group>"; };
+		3BBEA9D219FFCE7F00282ACD /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3BBEA9D419FFCE8E00282ACD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		3BBEA9D519FFCE8E00282ACD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		3BBEA9D719FFD18500282ACD /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		3BBEA9D919FFD19500282ACD /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		3BBEA9DB19FFD1B400282ACD /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		3BBEA9DC19FFD1B400282ACD /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		3BBEA9F219FFD3A800282ACD /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		3BBEA9FE19FFDDC100282ACD /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BBEA97F19FFCBCE00282ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBEA9DD19FFD1B400282ACD /* opencv2.framework in Frameworks */,
+				3BBEA9DE19FFD1B400282ACD /* TesseractOCR.framework in Frameworks */,
+				3BBEA9DA19FFD19500282ACD /* libstdc++.6.0.9.dylib in Frameworks */,
+				3BBEA9D819FFD18500282ACD /* CoreImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BBEA99419FFCBCE00282ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BBEA97919FFCBCD00282ACD = {
+			isa = PBXGroup;
+			children = (
+				3BBEA9DB19FFD1B400282ACD /* opencv2.framework */,
+				3BBEA9DC19FFD1B400282ACD /* TesseractOCR.framework */,
+				3BBEA9D919FFD19500282ACD /* libstdc++.6.0.9.dylib */,
+				3BBEA9D719FFD18500282ACD /* CoreImage.framework */,
+				3BBEA98419FFCBCE00282ACD /* SwiftOpenCV */,
+				3BBEA99A19FFCBCE00282ACD /* SwiftOpenCVTests */,
+				3BBEA98319FFCBCE00282ACD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BBEA98319FFCBCE00282ACD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BBEA98219FFCBCE00282ACD /* SwiftOpenCV.app */,
+				3BBEA99719FFCBCE00282ACD /* SwiftOpenCVTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BBEA98419FFCBCE00282ACD /* SwiftOpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				3BBEA9FE19FFDDC100282ACD /* tessdata */,
+				3BBEA9D419FFCE8E00282ACD /* MBProgressHUD.h */,
+				3BBEA9D519FFCE8E00282ACD /* MBProgressHUD.m */,
+				3BBEA9D219FFCE7F00282ACD /* DetailViewController.swift */,
+				3BBEA9CF19FFCE6F00282ACD /* ImageWrapper.h */,
+				3BBEA9D019FFCE6F00282ACD /* ImageWrapper.mm */,
+				3BBEA9CD19FFCE6000282ACD /* CharBox.swift */,
+				3BBEA9CA19FFCE4800282ACD /* UIImage+FixOrientation.h */,
+				3BBEA9CB19FFCE4800282ACD /* UIImage+FixOrientation.m */,
+				3BBEA9C719FFCE3B00282ACD /* TextDetect.h */,
+				3BBEA9C819FFCE3B00282ACD /* TextDetect.mm */,
+				3BBEA9C519FFCE3000282ACD /* SwiftOCR.swift */,
+				3BBEA9C319FFCE0D00282ACD /* Main.storyboard */,
+				3BBEA9BB19FFCD6400282ACD /* scenetext01.jpg */,
+				3BBEA9BC19FFCD6400282ACD /* scenetext02.jpg */,
+				3BBEA9BD19FFCD6400282ACD /* trained_classifierNM1.xml */,
+				3BBEA9BE19FFCD6400282ACD /* trained_classifierNM2.xml */,
+				3BBEA9F219FFD3A800282ACD /* ArrayExtension.swift */,
+				3BBEA98719FFCBCE00282ACD /* AppDelegate.swift */,
+				3BBEA98919FFCBCE00282ACD /* ViewController.swift */,
+				3BBEA98E19FFCBCE00282ACD /* Images.xcassets */,
+				3BBEA99019FFCBCE00282ACD /* LaunchScreen.xib */,
+				3BBEA98519FFCBCE00282ACD /* Supporting Files */,
+				3BBEA9A719FFCCE000282ACD /* SwiftOpenCV-Bridging-Header.h */,
+			);
+			path = SwiftOpenCV;
+			sourceTree = "<group>";
+		};
+		3BBEA98519FFCBCE00282ACD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BBEA98619FFCBCE00282ACD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BBEA99A19FFCBCE00282ACD /* SwiftOpenCVTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BBEA99D19FFCBCE00282ACD /* SwiftOpenCVTests.swift */,
+				3BBEA99B19FFCBCE00282ACD /* Supporting Files */,
+			);
+			path = SwiftOpenCVTests;
+			sourceTree = "<group>";
+		};
+		3BBEA99B19FFCBCE00282ACD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BBEA99C19FFCBCE00282ACD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BBEA98119FFCBCE00282ACD /* SwiftOpenCV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BBEA9A119FFCBCE00282ACD /* Build configuration list for PBXNativeTarget "SwiftOpenCV" */;
+			buildPhases = (
+				3BBEA97E19FFCBCE00282ACD /* Sources */,
+				3BBEA97F19FFCBCE00282ACD /* Frameworks */,
+				3BBEA98019FFCBCE00282ACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftOpenCV;
+			productName = SwiftOpenCV;
+			productReference = 3BBEA98219FFCBCE00282ACD /* SwiftOpenCV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BBEA99619FFCBCE00282ACD /* SwiftOpenCVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BBEA9A419FFCBCE00282ACD /* Build configuration list for PBXNativeTarget "SwiftOpenCVTests" */;
+			buildPhases = (
+				3BBEA99319FFCBCE00282ACD /* Sources */,
+				3BBEA99419FFCBCE00282ACD /* Frameworks */,
+				3BBEA99519FFCBCE00282ACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BBEA99919FFCBCE00282ACD /* PBXTargetDependency */,
+			);
+			name = SwiftOpenCVTests;
+			productName = SwiftOpenCVTests;
+			productReference = 3BBEA99719FFCBCE00282ACD /* SwiftOpenCVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BBEA97A19FFCBCD00282ACD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = WhitneyLand;
+				TargetAttributes = {
+					3BBEA98119FFCBCE00282ACD = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					3BBEA99619FFCBCE00282ACD = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 3BBEA98119FFCBCE00282ACD;
+					};
+				};
+			};
+			buildConfigurationList = 3BBEA97D19FFCBCD00282ACD /* Build configuration list for PBXProject "SwiftOpenCV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BBEA97919FFCBCD00282ACD;
+			productRefGroup = 3BBEA98319FFCBCE00282ACD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BBEA98119FFCBCE00282ACD /* SwiftOpenCV */,
+				3BBEA99619FFCBCE00282ACD /* SwiftOpenCVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BBEA98019FFCBCE00282ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBEA9C219FFCD6400282ACD /* trained_classifierNM2.xml in Resources */,
+				3BBEA9FF19FFDDC100282ACD /* tessdata in Resources */,
+				3BBEA99219FFCBCE00282ACD /* LaunchScreen.xib in Resources */,
+				3BBEA9C119FFCD6400282ACD /* trained_classifierNM1.xml in Resources */,
+				3BBEA9C419FFCE0D00282ACD /* Main.storyboard in Resources */,
+				3BBEA9C019FFCD6400282ACD /* scenetext02.jpg in Resources */,
+				3BBEA98F19FFCBCE00282ACD /* Images.xcassets in Resources */,
+				3BBEA9BF19FFCD6400282ACD /* scenetext01.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BBEA99519FFCBCE00282ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BBEA97E19FFCBCE00282ACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBEA9D319FFCE7F00282ACD /* DetailViewController.swift in Sources */,
+				3BBEA98A19FFCBCE00282ACD /* ViewController.swift in Sources */,
+				3BBEA9C619FFCE3000282ACD /* SwiftOCR.swift in Sources */,
+				3BBEA9D119FFCE6F00282ACD /* ImageWrapper.mm in Sources */,
+				3BBEA98819FFCBCE00282ACD /* AppDelegate.swift in Sources */,
+				3BBEA9F319FFD3A800282ACD /* ArrayExtension.swift in Sources */,
+				3BBEA9CC19FFCE4800282ACD /* UIImage+FixOrientation.m in Sources */,
+				3BBEA9D619FFCE8E00282ACD /* MBProgressHUD.m in Sources */,
+				3BBEA9CE19FFCE6000282ACD /* CharBox.swift in Sources */,
+				3BBEA9C919FFCE3B00282ACD /* TextDetect.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BBEA99319FFCBCE00282ACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBEA99E19FFCBCE00282ACD /* SwiftOpenCVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BBEA99919FFCBCE00282ACD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BBEA98119FFCBCE00282ACD /* SwiftOpenCV */;
+			targetProxy = 3BBEA99819FFCBCE00282ACD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3BBEA99019FFCBCE00282ACD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BBEA99119FFCBCE00282ACD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BBEA99F19FFCBCE00282ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BBEA9A019FFCBCE00282ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BBEA9A219FFCBCE00282ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SwiftOpenCV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftOpenCV/SwiftOpenCV-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BBEA9A319FFCBCE00282ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SwiftOpenCV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftOpenCV/SwiftOpenCV-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		3BBEA9A519FFCBCE00282ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftOpenCVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftOpenCV.app/SwiftOpenCV";
+			};
+			name = Debug;
+		};
+		3BBEA9A619FFCBCE00282ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftOpenCVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftOpenCV.app/SwiftOpenCV";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BBEA97D19FFCBCD00282ACD /* Build configuration list for PBXProject "SwiftOpenCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BBEA99F19FFCBCE00282ACD /* Debug */,
+				3BBEA9A019FFCBCE00282ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BBEA9A119FFCBCE00282ACD /* Build configuration list for PBXNativeTarget "SwiftOpenCV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BBEA9A219FFCBCE00282ACD /* Debug */,
+				3BBEA9A319FFCBCE00282ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3BBEA9A419FFCBCE00282ACD /* Build configuration list for PBXNativeTarget "SwiftOpenCVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BBEA9A519FFCBCE00282ACD /* Debug */,
+				3BBEA9A619FFCBCE00282ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BBEA97A19FFCBCD00282ACD /* Project object */;
+}
