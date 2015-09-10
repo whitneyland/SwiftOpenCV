@@ -107,20 +107,26 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             alert.show()
         }
     }
-    
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!) {
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         selectedImage = image;
         picker.dismissViewControllerAnimated(true, completion: nil);
         imageView.image = selectedImage;
+
     }
+    
+//    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!) {
+//        selectedImage = image;
+//        picker.dismissViewControllerAnimated(true, completion: nil);
+//        imageView.image = selectedImage;
+//    }
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var vc =  segue.destinationViewController as DetailViewController
-        vc.recognizedText = sender as String!
+        var vc =  segue.destinationViewController as! DetailViewController
+        vc.recognizedText = sender as! String!
     }
 }
 

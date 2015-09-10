@@ -90,7 +90,7 @@ class SwiftOCR {
         for index = 0; index < channels.count; index++ {
             var region = ExtremeRegionStat()
             
-            region = erFilter1.run(channels[index] as UIImage);
+            region = erFilter1.run(channels[index] as! UIImage);
             
             regions.append(region);
         }
@@ -105,11 +105,11 @@ class SwiftOCR {
         
         var windex: Int
         for windex = 0; windex < words.count; windex++ {
-            let dict = words[windex] as Dictionary<String, AnyObject>
-            let text = dict["text"]! as String
-            let confidence = dict["confidence"]! as Float
-            let box = dict["boundingbox"] as NSValue
-            if((text.utf16Count < 2 || confidence < 51) || (text.utf16Count < 4 && confidence < 60)){
+            let dict = words[windex] as! Dictionary<String, AnyObject>
+            let text = dict["text"]! as! String
+            let confidence = dict["confidence"]! as! Float
+            let box = dict["boundingbox"] as! NSValue
+            if((count(text.utf16) < 2 || confidence < 51) || (count(text.utf16) < 4 && confidence < 60)){
                 continue
             }
             
