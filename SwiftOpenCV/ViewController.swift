@@ -119,8 +119,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var vc =  segue.destinationViewController as DetailViewController
-        vc.recognizedText = sender as String!
+        var vc =  segue.destinationViewController as! DetailViewController
+        vc.recognizedText = sender as! String!
     }
 }
 

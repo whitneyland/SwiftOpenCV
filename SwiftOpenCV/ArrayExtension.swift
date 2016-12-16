@@ -11,11 +11,13 @@ import Foundation
 extension Array {
     func combine(separator: String) -> String{
         var str : String = ""
-        for (idx, item) in enumerate(self) {
+        var idx = 0
+        for item in self {
             str += "\(item)"
             if idx < self.count-1 {
                 str += separator
             }
+            idx += 1
         }
         return str
     }
