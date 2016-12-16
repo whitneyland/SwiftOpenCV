@@ -55,7 +55,7 @@ class SwiftOCR {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 1.0)
         fimage.drawInRect(CGRectMake(0, 0, size.width, size.height))
-       _image = UIGraphicsGetImageFromCurrentImageContext()
+       _image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext();
        
     
@@ -72,7 +72,7 @@ class SwiftOCR {
     //Recognize function
     func recognize() {
         
-         _characterBoxes = Array<CharBox>()
+        _characterBoxes = Array<CharBox>()
         
         var uImage = CImage(image: _image);
         
@@ -90,7 +90,7 @@ class SwiftOCR {
         for index = 0; index < channels.count; index++ {
             var region = ExtremeRegionStat()
             
-            region = erFilter1.run(channels[index] as UIImage);
+            region = erFilter1.run(channels[index] as! UIImage);
             
             regions.append(region);
         }
@@ -98,18 +98,17 @@ class SwiftOCR {
         _groupedImage = ExtremeRegionStat.groupImage(uImage, withRegions: regions);
         
         _tesseract.recognize();
-    
+        
         var words = _tesseract.getConfidenceByWord;
         
         var texts = Array<String>();
         
-        var windex: Int
-        for windex = 0; windex < words.count; windex++ {
-            let dict = words[windex] as Dictionary<String, AnyObject>
-            let text = dict["text"]! as String
-            let confidence = dict["confidence"]! as Float
-            let box = dict["boundingbox"] as NSValue
-            if((text.utf16Count < 2 || confidence < 51) || (text.utf16Count < 4 && confidence < 60)){
+        for windex in 0..<words.count {
+            let dict = words[windex] as! Dictionary<String, AnyObject>
+            let text = dict["text"]! as! String
+            let confidence = dict["confidence"]! as! Float
+            let box = dict["boundingbox"] as! NSValue
+            if  (text.characters.count < 2 || confidence < 51) || (text.characters.count < 4 && confidence < 60){
                 continue
             }
             
@@ -119,12 +118,13 @@ class SwiftOCR {
         }
         
         var str : String = ""
-        
-        for (idx, item) in enumerate(texts) {
+        var idx = 0
+        for item in texts {
             str += item
             if idx < texts.count-1 {
                 str += " "
             }
+            idx = idx + 1
         }
         
         _recognizedText = str
